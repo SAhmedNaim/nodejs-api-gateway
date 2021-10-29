@@ -2,3 +2,4 @@
 -> curl http://localhost:3000/bogusapi/
 -> curl http://localhost:3000/testapi/fakeapi
 -> curl -X POST http://localhost:3000/testapi/vote/
+-> curl -X POST -d '{"apiName":"registrytest","host":"http://localhost","port":"3001","url":"http://localhost:3001/"}' -H 'Content-Type: application/json' http://localhost:3000/register/
