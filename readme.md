@@ -1,4 +1,4 @@
--> curl http://localhost:3000/helloWorld
--> 
+-> curl http://localhost:3000/fakeapi/
+-> curl http://localhost:3000/bogusapi/
 -> 
 -> 

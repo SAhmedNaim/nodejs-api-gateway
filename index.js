@@ -1,1 +1,0 @@
-const gateway = require('./gateway');

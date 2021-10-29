@@ -8,6 +8,10 @@ app.get('/fakeapi', (req, res, next) => {
     res.send(`Hello from Fake API Server`)
 })
 
+app.get('/bogusapi', (req, res, next) => {
+    res.send(`Bogus API says Hello...`)
+})
+
 app.listen(PORT, () => {
     console.log(`Hello from fake api server from the PORT ${PORT}`);
 })
