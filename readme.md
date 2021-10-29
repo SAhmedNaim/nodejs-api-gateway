@@ -1,4 +1,4 @@
 -> curl http://localhost:3000/fakeapi/
 -> curl http://localhost:3000/bogusapi/
--> 
--> 
+-> curl http://localhost:3000/testapi/fakeapi
+-> curl -X POST http://localhost:3000/testapi/vote/

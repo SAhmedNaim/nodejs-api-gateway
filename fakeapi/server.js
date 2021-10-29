@@ -12,6 +12,10 @@ app.get('/bogusapi', (req, res, next) => {
     res.send(`Bogus API says Hello...`)
 })
 
+app.post('/vote', (req, res, next) => {
+    res.send(`Thanks for perticiapting on the voting system...`)
+})
+
 app.listen(PORT, () => {
     console.log(`Hello from fake api server from the PORT ${PORT}`);
 })
