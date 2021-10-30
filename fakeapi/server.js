@@ -2,8 +2,9 @@ const express = require('express')
 const app = express()
 const axios = require('axios')
 
-const PORT = 3005
+const PORT = 3002
 const HOST = "localhost"
+const PROTOCOL = "http"
 
 app.use(express.json())
 app.get('/fakeapi', (req, res, next) => {
@@ -26,9 +27,10 @@ app.listen(PORT, () => {
         headers: {'Content-Type': 'application/json'},
         data: {
             apiName: "registrytest",
-            protocol: "http",
+            protocol: PROTOCOL,
             host: HOST,
-            port: PORT
+            port: PORT,
+            url: `${PROTOCOL}://${HOST}:${PORT}/`
         }
     }).then((response) => {
         console.log(response.data)
